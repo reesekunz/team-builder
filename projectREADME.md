@@ -45,7 +45,7 @@ Follow these steps for completing your project.
 
 - Give the state variable you just declared a default value. You will need to keep track of a list of team members and each team member will have several key/value pairs associated with them.
 
-- Render your list of team members
+- Render your list of team members 
 
 ### STEP 2 - Build your form
 
@@ -94,3 +94,28 @@ After finishing your required elements, you can push your work further. These go
 - Look into the various strategies around form validation. What happens if you try to enter a number as a team-members name? Does your App allow for that? Should it? What happens if you try and enter a function as the value to one of your fields? How could this be dangerous? How might you prevent it?
 
 - Style the forms. There are some subtle browser defaults for input tags that might need to be overwritten based on their state (active, focus, hover, etc.); Keep those CSS skill sharp.
+
+## Other personal project notes 
+- need to create list of members yourself (in app.js)
+- need to display or render team members, mapping over state and displaying them
+- create the array in app.js. info filled in from the form (need to create a form.js) will create new members that you can map over and render out
+- create form in form.js and pass newly created member info into app.js to create array of members 
+
+## Steps I Took to Complete the Project:
+
+## Initial Set Up (after fork and clone)
+
+1. in terminal => create-react-app team-builder 
+
+2. in terminal => cd team-builder 
+                  yarn start 
+
+3. in terminal => git checkout -b reese-kunz
+
+## Setting up state 
+
+1. in app.js => import useState hook 
+
+2. in app.js function => give state variable a default value => const [member, setMember] = useState ([]);
+
+
