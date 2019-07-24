@@ -21,6 +21,41 @@ const handleChange = event => {
     console.log(member.role);
   };
 
+  return (
+    <div className="Form">
+      {console.log(member)}
+      <form onSubmit={event => handleSubmit(event)}>
+        <label>
+          Name:
+          <input
+            type="text"
+            name="name"
+            value={member.name}
+            onChange={event => handleChange(event)}
+          />
+        </label>
+        <label>
+         Email:
+          <input
+            type="text"
+            name="email"
+            value={member.email}
+            onChange={event => handleChange(event)}
+          />
+        </label>
+        Role:
+          <input
+            type="text"
+            name="role"
+            value={member.role}
+            onChange={event => handleChange(event)}
+          />
+        </label>
+        <button>Submit!</button>
+      </form>
+    </div>
+  );
 }
+
 
 export default Form; 
