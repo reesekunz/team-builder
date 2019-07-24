@@ -43,6 +43,7 @@ const handleChange = event => {
             onChange={event => handleChange(event)}
           />
         </label>
+        <label>
         Role:
           <input
             type="text"

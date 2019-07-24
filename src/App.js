@@ -1,11 +1,15 @@
 import React, { useState } from "react";
+
 import logo from "./logo.svg";
 import "./App.css";
+
+import Form from "./Form"
+import TeamMember from "./TeamMember"
 
 
 
 function App() {
-  const [member, setMember] = useState([]);
+  //const [member, setMember] = useState([]);
   
   
   return (
