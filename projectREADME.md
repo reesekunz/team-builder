@@ -96,7 +96,7 @@ After finishing your required elements, you can push your work further. These go
 - Style the forms. There are some subtle browser defaults for input tags that might need to be overwritten based on their state (active, focus, hover, etc.); Keep those CSS skill sharp.
 
 ## Other personal project notes 
-- need to create list of members yourself (in app.js)
+- need to create array of team members yourself
 - need to display or render team members, mapping over state and displaying them
 - create the array in app.js. info filled in from the form (need to create a form.js) will create new members that you can map over and render out
 - create form in form.js and pass newly created member info into app.js to create array of members 
@@ -125,3 +125,5 @@ After finishing your required elements, you can push your work further. These go
 1. in created Form.js file => set up component with imports/exports and use state 
 
 2. in form.js => build out component using spread operator and computer properties. Return the inputs you want the user to fill out in the form (name, email, role)
+
+3. in app.js => add <Form /> component to return function (form should now be displaying on screen)

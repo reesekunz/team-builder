@@ -22,7 +22,17 @@ import "./App.css";
     
     ]
 
+    console.log('teamMembers array', teamMembers);
+    console.log('teamMembers array', JSON.stringify(teamMembers));
 
+  
+// teamMembers.map((member) => {
+// console.log(member);
+// return (
 
-    console.log('teamMember array', teamMembers);
-    console.log('teamMember array', JSON.stringify(teamMembers));
+// {member.name}
+// {member.email}
+// {member.role}
+
+// )
+// )};
