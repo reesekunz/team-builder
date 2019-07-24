@@ -1,15 +1,11 @@
-import React, {useState} from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
-
-const [member, setMember] = useState ([]);
-// include name, email, and role for each team member 
-
-
-
-
+  const [member, setMember] = useState([]);
+  
+  
   return (
     <div className="App">
       <header className="App-header">

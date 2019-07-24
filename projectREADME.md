@@ -118,4 +118,10 @@ After finishing your required elements, you can push your work further. These go
 
 2. in app.js function => give state variable a default value => const [member, setMember] = useState ([]);
 
+3. add Form.js and TeamMember.js to build out components (which import into return part of app.js function)
 
+## Build out Form
+
+1. in created Form.js file => set up component with imports/exports and use state 
+
+2. 
