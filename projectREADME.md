@@ -124,4 +124,6 @@ After finishing your required elements, you can push your work further. These go
 
 1. in created Form.js file => set up component with imports/exports and use state 
 
-2. 
+2. in form.js => build out component using spread operator and computer properties 
+
+

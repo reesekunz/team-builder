@@ -8,9 +8,18 @@ const [member, setMember] = useState({
 name: " ",
 email: " ",
 role: " ",
-
-
 });
+
+const handleChange = event => {
+    setMember({ ...member, [event.target.name]: event.target.value });
+  };
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    console.log(member.name);
+    console.log(member.email);
+    console.log(member.role);
+  };
 
 }
 
