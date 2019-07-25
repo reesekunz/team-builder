@@ -17,7 +17,6 @@ function Form(props) {
   // form submission  P
   const handleSubmit = event => {
     event.preventDefault();
-    P;
     console.log(input.name);
     console.log(input.email);
     console.log(input.role);
