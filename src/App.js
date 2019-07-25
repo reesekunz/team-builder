@@ -1,18 +1,14 @@
 import React, { useState } from "react";
 import "./App.css";
-import Form from "./Form"
+import "./Components/Form";
+import "./Components/TeamMember";
 
 function App() {
-  //const [member, setMember] = useState([]);
-  
-  
   return (
     <div className="App">
       <header className="App-header">
-        <div>
-          <Form />
-        </div>
-      
+        <div>Team Member</div>
+        <div>Form</div>
       </header>
     </div>
   );

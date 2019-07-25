@@ -101,20 +101,7 @@ After finishing your required elements, you can push your work further. These go
 - create the array in app.js. info filled in from the form (need to create a form.js) will create new members that you can map over and render out
 - create form in form.js and pass newly created member info into app.js to create array of members 
 
-## Steps I Took to Complete the Project:
 
-## Initial Set Up (after fork and clone)
-
-1. in terminal => create-react-app team-builder 
-
-2. in terminal => cd team-builder 
-                  yarn start 
-
-3. in terminal => git checkout -b reese-kunz
-
-## Setting up state 
-
-1. in app.js => import useState hook 
 
 2. in app.js function => give state variable a default value => const [member, setMember] = useState ([]);
 
@@ -124,6 +111,25 @@ After finishing your required elements, you can push your work further. These go
 
 1. in created Form.js file => set up component with imports/exports and use state 
 
-2. in form.js => build out component using spread operator and computer properties. Return the inputs you want the user to fill out in the form (name, email, role)
+## Steps to Complete Project 
 
-3. in app.js => add <Form /> component to return function (form should now be displaying on screen)
+# Initial Set Up (after fork and clone) 
+1. in terminal => create-react-app team-builder
+
+2. in terminal =>  cd team-builder
+                    yarn start 
+        
+3. in terminal => git checkout -b reese-kunz 
+
+4. Plan out layout/file structure. Add component folder to src with Form.js and TeamMember.js files (we will add these components to the app.js)
+
+# Setting up State 
+
+1. import useState hook in app.js, Form.js and TeamMember.js 
+
+2. Set up imports/exports with placeholder functions for Form.js and TeamMember.js (just return <div>word</div>) to make sure imports and exports are set up correctly for each file) 
+
+3. 
+
+
+
