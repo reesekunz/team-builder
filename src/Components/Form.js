@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 
 function Form(props) {
+  // create useState with inputs you want from user
   const [input, setInput] = useState({
     name: " ",
     email: " ",
     role: " ",
-    id: " ",
+    id: null
   });
   // form input
   const handleChange = event => {
@@ -13,13 +14,15 @@ function Form(props) {
     console.log(event.target.value);
     setInput({ ...input, [event.target.name]: event.target.value });
   };
-  // form submission
+  // form submission  P
   const handleSubmit = event => {
     event.preventDefault();
+    P;
     console.log(input.name);
     console.log(input.email);
     console.log(input.role);
     props.add({ ...input, id: Math.random() });
+    // take inputs from useState above (inputs will now be changed when form is submitted)
     setInput({
       name: "",
       email: "",
@@ -42,15 +45,19 @@ function Form(props) {
             onChange={handleChange}
           />
         </label>
+        {/* // same syntax as name label but 'name' and 'value' are different  */}
         <label htmlFor="Email">
           Email:{" "}
           <input
             type="text"
             name="email"
+            // make value dynamic so will change when user inputs something
             value={input.email}
             onChange={handleChange}
           />
         </label>
+        {/* // same syntax as name label but 'name' and 'value' are different  */}
+
         <label htmlFor="Role">
           Role:{" "}
           <input

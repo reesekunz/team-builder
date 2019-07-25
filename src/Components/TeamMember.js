@@ -29,53 +29,57 @@ function TeamMember(props) {
     setEditing(false);
   };
 
-  console.log("edit", editing);
+  console.log("edit", editing); //edit shows as boolean - true or false (apply this to if/else below)
 
-  return editing ? (
-    // ternary operator will say whether to add new or edit existing team member
-    // adding new team nembers - copy/paste from form.js (just for <form onSumbit > use handleUpdate from above instead of handleSubmit)
-    <div className="Form">
-      <form onSubmit={handleUpdate}>
-        <label htmlFor="Name">
-          Name:{" "}
-          <input
-            type="text"
-            name="name"
-            value={input.name}
-            onChange={handleChange}
-          />
-        </label>
-        <label htmlFor="Email">
-          Email:{" "}
-          <input
-            type="text"
-            name="email"
-            value={input.email}
-            onChange={handleChange}
-          />
-        </label>
-        <label htmlFor="Role">
-          Role:{" "}
-          <input
-            type="text"
-            name="role"
-            value={input.role}
-            onChange={handleChange}
-          />
-        </label>
-        <button>Submit</button>
-      </form>
-    </div>
-  ) : (
-    // end of copy/paste from form.js
-    // editing existing team members - add dynamic values inside ternary operator (this will say that we already have that team members props (submission) and just want to edit them)
-    <div>
-      <div>Name: {name}</div>
-      <div>Email: {email}</div>
-      <div>Role: {role}</div>
-      <button onClick={handleEdit}>Edit</button>
-    </div>
-  );
+  //   If/else statement to tell form you either want to edit existing team member (first section)
+  //   or add new team member (second section - just returning exactly what you have from form.js
+  //   only difference is use handleUpdate from above instead of handleSubmit)
+
+  if (editing === false) {
+    return (
+      <div>
+        <div>Name: {name}</div>
+        <div>Email: {email}</div>
+        <div>Role: {role}</div>
+        <button onClick={handleEdit}>Edit</button>
+      </div>
+    );
+  } else {
+    return (
+      <div className="Form">
+        <form onSubmit={handleUpdate}>
+          <label htmlFor="Name">
+            Name:{" "}
+            <input
+              type="text"
+              name="name"
+              value={input.name}
+              onChange={handleChange}
+            />
+          </label>
+          <label htmlFor="Email">
+            Email:{" "}
+            <input
+              type="text"
+              name="email"
+              value={input.email}
+              onChange={handleChange}
+            />
+          </label>
+          <label htmlFor="Role">
+            Role:{" "}
+            <input
+              type="text"
+              name="role"
+              value={input.role}
+              onChange={handleChange}
+            />
+          </label>
+          <button>Submit</button>
+        </form>
+      </div>
+    );
+  }
 }
 
 export default TeamMember;
