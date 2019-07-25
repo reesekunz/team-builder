@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 
 function TeamMember(props) {
-// pass each input you want as a parameter 
+  // pass each input you want as a parameter
   const { name, email, role, id } = props.member;
-// same useState from form.js 
+  // same useState from form.js
   const [input, setInput] = useState({
     name: name,
     email: email,
     role: role,
     id: id
   });
-  // create new useState for editing data 
+  // create new useState for editing data
   const [editing, setEditing] = useState(false);
 
   const handleEdit = event => {
@@ -22,7 +22,7 @@ function TeamMember(props) {
     console.log("value", event.target.value);
     setInput({ ...input, [event.target.name]: event.target.value });
   };
-// instead of hanldeSubmit in form.js we have new const, handleUpdate (passes inputed data as props to update/edit)
+  // instead of hanldeSubmit in form.js we have new const, handleUpdate (passes inputed data as props to update/edit)
   const handleUpdate = event => {
     event.preventDefault();
     props.update(input);
@@ -66,8 +66,8 @@ function TeamMember(props) {
         <button>Submit</button>
       </form>
     </div>
-    // end of copy/paste from form.js
   ) : (
+    // end of copy/paste from form.js
     // editing existing team members - add dynamic values inside ternary operator (this will say that we already have that team members props (submission) and just want to edit them)
     <div>
       <div>Name: {name}</div>

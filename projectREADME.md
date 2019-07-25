@@ -129,12 +129,16 @@ After finishing your required elements, you can push your work further. These go
 
 2. Set up imports/exports with placeholder functions for each file (just return <div>word</div>) to make sure imports and exports are set up correctly for each file)
 
-# Build out form
+# Build out Form.js
 
 1. in form.js => build out component using spread operator and computer properties. Return the inputs you want the user to fill out in the form (name, email, role) using form, label, input elements.
 
 2. Add built out <Form /> component to app.js (form should now be displaying on app)
 
-# Build out team member 
+# Build out TeamMember.js
 
 1. Notes in TeamMember.js on how to do this 
+
+# Add useState and TeamMember/Form components to App.js 
+
+1. Notes in App.js on how to do this (app should now be functional)

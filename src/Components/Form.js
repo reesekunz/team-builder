@@ -5,7 +5,7 @@ function Form(props) {
     name: " ",
     email: " ",
     role: " ",
-    id: null
+    id: " ",
   });
   // form input
   const handleChange = event => {
@@ -32,6 +32,7 @@ function Form(props) {
   return (
     <div className="Form">
       <form onSubmit={handleSubmit}>
+        <h4>Add Team Member</h4>
         <label htmlFor="Name">
           Name:{" "}
           <input
