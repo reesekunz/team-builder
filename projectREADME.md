@@ -131,7 +131,7 @@ After finishing your required elements, you can push your work further. These go
 
 # Build out form 
 
-1. in form.js => build out component using spread operator and computer properties. Return the inputs you want the user to fill out in the form (name, email, role)
+1. in form.js => build out component using spread operator and computer properties. Return the inputs you want the user to fill out in the form (name, email, role) using form, label, input elements. 
 
 2. Add built out <Form /> component to app.js 
 
