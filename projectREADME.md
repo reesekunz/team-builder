@@ -45,7 +45,7 @@ Follow these steps for completing your project.
 
 - Give the state variable you just declared a default value. You will need to keep track of a list of team members and each team member will have several key/value pairs associated with them.
 
-- Render your list of team members 
+- Render your list of team members
 
 ### STEP 2 - Build your form
 
@@ -59,9 +59,11 @@ Follow these steps for completing your project.
 Next we're going to reuse the `Form` component to edit team members
 
 **Get App.js ready for editing members**
+
 - Add an edit button, or an edit icon next to each member you are rendering. When the button/icon is clicked, we want to set that member to a state property in `App` called `memberToEdit`. The function to do this should live in `App`, even if the button/icon invoking it are in a different component. Just pass the function down as a prop.
 
 **Get Form.js ready to edit members**
+
 - Pass `memberToEdit` down to `Form.js`
 - If `Form` receives `props.memberToEdit`, then that member object should populate your state object that is controlling your forms. Now, it may be tempting to do something like this: `const [member, setMember] = useState(props.memberToEdit || {name: '', email: '', role: ''})` for our form to update with whatever member we click on. However, this is a trap that will cause a pretty big bug in our app. If props are used to set state like this, the state property will _NOT_ update when the prop changes. So... what kind of technique have we learned to keep something in sync with props when they change? `useEffect`! Write an effect that syncs with `props.memberToEdit`. When `props.memberToEdit` changes, the effect will update the `member` state object with the new data. This will populate the inputs with whichever member we are trying to update.
 
@@ -74,7 +76,6 @@ The flow for editing is hard to conceptualize. It should go something like this:
 1. Uh... now what do we do with this new data? If we submit the form, it will just add a new member 😫. Never fear! We will fix this in the next section!
 
 ### STEP 4 - Form submit
-
 
 This is an interesting bit of architecture we've done so far. We have built a reusable form that can be used to add a team member, or edit a team member. The last piece of the puzzle is this - when we submit the form, do we run an `addMember` function, or an `editMember` function? And how will the form know? Well, our form knows if we are editing a team member by whether or not there is the prop `memberToEdit`. (P.S. This can also be done with a boolean - something like `isEditing`...)
 
@@ -95,13 +96,12 @@ After finishing your required elements, you can push your work further. These go
 
 - Style the forms. There are some subtle browser defaults for input tags that might need to be overwritten based on their state (active, focus, hover, etc.); Keep those CSS skill sharp.
 
-## Other personal project notes 
+## Other personal project notes
+
 - need to create array of team members yourself
 - need to display or render team members, mapping over state and displaying them
 - create the array in app.js. info filled in from the form (need to create a form.js) will create new members that you can map over and render out
-- create form in form.js and pass newly created member info into app.js to create array of members 
-
-
+- create form in form.js and pass newly created member info into app.js to create array of members
 
 2. in app.js function => give state variable a default value => const [member, setMember] = useState ([]);
 
@@ -109,31 +109,28 @@ After finishing your required elements, you can push your work further. These go
 
 ## Build out Form
 
-1. in created Form.js file => set up component with imports/exports and use state 
+1. in created Form.js file => set up component with imports/exports and use state
 
-## Steps to Complete Project 
+## Steps to Complete Project
 
-# Initial Set Up (after fork and clone) 
+# Initial Set Up (after fork and clone)
+
 1. in terminal => create-react-app team-builder
 
-2. in terminal =>  cd team-builder
-                    yarn start 
-        
-3. in terminal => git checkout -b reese-kunz 
+2. in terminal => cd team-builder
+   yarn start
+3. in terminal => git checkout -b reese-kunz
 
 4. Plan out layout/file structure. Add component folder to src with Form.js and TeamMember.js files (we will add these components to the app.js)
 
-# Setting up State 
+# Setting up State
 
-1. import useState hook in app.js, Form.js and TeamMember.js 
+1. import useState hook in app.js, Form.js and TeamMember.js
 
-2. Set up imports/exports with placeholder functions for each file (just return <div>word</div>) to make sure imports and exports are set up correctly for each file) 
+2. Set up imports/exports with placeholder functions for each file (just return <div>word</div>) to make sure imports and exports are set up correctly for each file)
 
-# Build out form 
+# Build out form
 
-1. in form.js => build out component using spread operator and computer properties. Return the inputs you want the user to fill out in the form (name, email, role) using form, label, input elements. 
+1. in form.js => build out component using spread operator and computer properties. Return the inputs you want the user to fill out in the form (name, email, role) using form, label, input elements.
 
-2. Add built out <Form /> component to app.js 
-
-
-
+2. Add built out <Form /> component to app.js (form should now be displaying on app)

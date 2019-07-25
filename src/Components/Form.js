@@ -31,32 +31,32 @@ function Form(props) {
   console.log("input", input);
   return (
     <div className="Form">
-      <form onSubmit={event => handleSubmit(event)}>
-        <label>
-          Name: {" "}
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="Name">
+          Name:{" "}
           <input
             type="text"
             name="name"
             value={input.name}
-            onChange={event => handleChange(event)}
+            onChange={handleChange}
           />
         </label>
-        <label>
-          Email: {" "}
+        <label htmlFor="Email">
+          Email:{" "}
           <input
             type="text"
             name="email"
             value={input.email}
-            onChange={event => handleChange(event)}
+            onChange={handleChange}
           />
         </label>
-        <label>
-          Role: {" "}
+        <label htmlFor="Role">
+          Role:{" "}
           <input
             type="text"
             name="role"
             value={input.role}
-            onChange={event => handleChange(event)}
+            onChange={handleChange}
           />
         </label>
         <button>Submit!</button>
