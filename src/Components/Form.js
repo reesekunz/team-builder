@@ -59,7 +59,7 @@ function Form(props) {
             onChange={handleChange}
           />
         </label>
-        <button>Submit!</button>
+        <button>Submit</button>
       </form>
     </div>
   );

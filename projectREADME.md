@@ -134,3 +134,7 @@ After finishing your required elements, you can push your work further. These go
 1. in form.js => build out component using spread operator and computer properties. Return the inputs you want the user to fill out in the form (name, email, role) using form, label, input elements.
 
 2. Add built out <Form /> component to app.js (form should now be displaying on app)
+
+# Build out team member 
+
+1. Notes in TeamMember.js on how to do this 
