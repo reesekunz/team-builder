@@ -2,31 +2,31 @@
 import React, { useState } from "react";
 
 function Form(props) {
-const [member, setMember] = useState({
+const [input, setInput] = useState({
 name: " ",
 email: " ",
 role: " ",
 });
 const handleChange = event => {
-    setMember({ ...member, [event.target.name]: event.target.value });
+    setInput({ ...input, [event.target.name]: event.target.value });
   };
   const handleSubmit = event => {
     event.preventDefault();
-    console.log(member.name);
-    console.log(member.email);
-    console.log(member.role);
+    console.log(input.name);
+    console.log(input.email);
+    console.log(input.role);
   };
 
   return (
     <div className="Form">
-      {console.log(member)}
+      {console.log(input)}
       <form onSubmit={event => handleSubmit(event)}>
         <label>
           Name:
           <input
             type="text"
             name="name"
-            value={member.name}
+            value={input.name}
             onChange={event => handleChange(event)}
           />
         </label>
@@ -35,7 +35,7 @@ const handleChange = event => {
           <input
             type="text"
             name="email"
-            value={member.email}
+            value={input.email}
             onChange={event => handleChange(event)}
           />
         </label>
@@ -44,7 +44,7 @@ const handleChange = event => {
           <input
             type="text"
             name="role"
-            value={member.role}
+            value={input.role}
             onChange={event => handleChange(event)}
           />
         </label>
