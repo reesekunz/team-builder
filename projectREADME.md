@@ -127,9 +127,13 @@ After finishing your required elements, you can push your work further. These go
 
 1. import useState hook in app.js, Form.js and TeamMember.js 
 
-2. Set up imports/exports with placeholder functions for Form.js and TeamMember.js (just return <div>word</div>) to make sure imports and exports are set up correctly for each file) 
+2. Set up imports/exports with placeholder functions for each file (just return <div>word</div>) to make sure imports and exports are set up correctly for each file) 
 
-3. 
+# Build out form 
+
+1. in form.js => build out component using spread operator and computer properties. Return the inputs you want the user to fill out in the form (name, email, role)
+
+2. Add built out <Form /> component to app.js 
 
 
 
